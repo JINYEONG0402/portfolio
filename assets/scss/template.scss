@@ -1,0 +1,53 @@
+// Make page header alignment consistent with widget page header alignment
+.universal-wrapper h1 {
+  text-align: center;
+  color: rgb(221, 248, 232);
+}
+
+// Center the CTA shortcode button
+.cta-group {
+  justify-content: center;
+}
+
+// Light mode styles
+body {
+  background-color: rgb(247, 241, 244); /* 라이트 모드 배경색 */
+  color: #000e4b; /* 라이트 모드 텍스트 색상 */
+}
+
+.universal-wrapper h1 {
+  color: #333; /* 라이트 모드에서 제목 색상 */
+}
+
+.cta-group button {
+  background-color: #7ad2cf; /* 라이트 모드에서 CTA 버튼 배경색 */
+  color: #fff; /* 라이트 모드에서 CTA 버튼 텍스트 색상 */
+}
+
+.hover button {
+  background-color: yellow;
+}
+
+.overlay-text card {
+  background: rgba(0, 0, 0, 0.5); /* 반투명한 검은색 배경 */
+  color: white; /* 텍스트 색상 */
+  padding: 10px; /* 패딩 추가 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  z-index: 1; /* 텍스트가 이미지 위에 위치 */
+  opacity: 0.5;
+}
+
+// Dark mode styles
+.dark body {
+  background-color: rgb(31, 39, 51); /* 다크 모드 배경색 */
+  color: #fff; /* 다크 모드 텍스트 색상 */
+}
+
+.dark .universal-wrapper h1 {
+  color: #fff; /* 다크 모드에서 제목 색상 */
+}
+
+.dark .cta-group button {
+  background-color: #0056b3; /* 다크 모드에서 CTA 버튼 배경색 */
+  color: #fff; /* 다크 모드에서 CTA 버튼 텍스트 색상 */
+}
