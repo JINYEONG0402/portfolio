@@ -3,4 +3,3 @@ dist/
 .idea/
 build_error.log
 hugo_backup/
-public/
