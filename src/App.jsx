@@ -11,7 +11,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 function App() {
     return (
         <LanguageProvider>
-            <Router>
+            <Router basename='/portfolio'>
                 <div className="min-h-screen bg-gray-50 dark:bg-gray-900 font-sans text-gray-900 dark:text-gray-100 transition-colors duration-300">
                     <Header />
                     <Routes>
