@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { getAssetPath } from '../utils/assets';
 
 const Hero = ({ slides }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,7 +31,7 @@ const Hero = ({ slides }) => {
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
-                            backgroundImage: `url(${slides[currentSlide].image})`,
+                            backgroundImage: `url(${getAssetPath(slides[currentSlide].image)})`,
                         }}
                     >
                         <div

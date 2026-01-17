@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Download, Code2, Database, Brain, GraduationCap } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { staticContent } from '../data/content';
+import { getAssetPath } from '../utils/assets';
 
 const Introduce = () => {
     const { language } = useLanguage();
@@ -37,7 +38,7 @@ const Introduce = () => {
                             <div className="absolute inset-0 bg-blue-200 dark:bg-blue-900/30 rounded-full blur opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                             <div className="w-64 h-64 rounded-full overflow-hidden mb-8 border-4 border-white dark:border-gray-800 shadow-xl relative z-10 transform transition-transform duration-500 hover:scale-105">
                                 <img
-                                    src="/media/avatar.jpg"
+                                    src={getAssetPath("/media/avatar.jpg")}
                                     alt="Ko Jin-young"
                                     className="w-full h-full object-cover"
                                 />

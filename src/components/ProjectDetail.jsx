@@ -10,6 +10,7 @@ SyntaxHighlighter.registerLanguage('java', java);
 import { projects } from '../data/content';
 import { Calendar, ArrowLeft, ExternalLink, Tag, Github } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
+import { getAssetPath } from '../utils/assets';
 
 const ProjectDetail = () => {
     const { id } = useParams();
@@ -82,7 +83,7 @@ const ProjectDetail = () => {
                     className="mb-12 rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-800"
                 >
                     <img
-                        src={project.image}
+                        src={getAssetPath(project.image)}
                         alt={project.title}
                         className="w-full h-auto max-h-[600px] object-cover"
                     />
