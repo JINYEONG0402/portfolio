@@ -113,7 +113,7 @@ const ProjectDetail = () => {
                                             return (
                                                 <div key={index} className="my-10">
                                                     <img
-                                                        src={imageMatch[2]}
+                                                        src={getAssetPath(imageMatch[2])}
                                                         alt={imageMatch[1]}
                                                         className="w-full max-w-2xl mx-auto rounded-xl shadow-lg border border-gray-100 dark:border-gray-700"
                                                     />
