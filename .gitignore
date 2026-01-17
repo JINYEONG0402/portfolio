@@ -1,7 +1,6 @@
-# IDEs
+node_modules/
+dist/
 .idea/
-
-# Hugo
-/resources/
+build_error.log
+hugo_backup/
 public/
-assets/jsconfig.json
